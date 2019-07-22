@@ -1,0 +1,34 @@
+Main
+	
+
+
+
+Person
+	firstName
+	lastName
+	meetPlace
+	relation
+
+Bio
+	general
+	expert
+
+
+
+example
+	Arman
+	Laalfam
+	Alborz
+	bestFriend
+	BIO
+		general
+			func.bornCity in Tehran
+			has just a sister
+			func.liveCity in Tehran
+		expert
+			plays Basketball
+			func.workField as programmer
+		Plan
+			
+			
+			
