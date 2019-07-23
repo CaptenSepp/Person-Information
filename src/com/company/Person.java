@@ -7,13 +7,14 @@ public class Person {
     private String lastName;
     private String meetPlace;
     private String relation;
-    private boolean validName = true;
     private String phoneNumber;
-    public ArrayList<String> description = new ArrayList<>();
-    private Specific specific = new Specific();
+    private boolean validName = true;
     private General general = new General();
-
-    public Person(String firstName, String lastName, String meetPlace, String relation,String phoneNumber) {
+    private Specific specific = new Specific();
+    public ArrayList<String> description = new ArrayList<>();
+    /**this constructor get the arguments from user in method main and evaluate the fields of Person class*/
+    public Person(String firstName, String lastName, String meetPlace, String relation, String phoneNumber) {
+        /**this if checks if the Entered arguments is a valid name because a name can't contain numbers or symbols*/
         if (isName(firstName)) {
             this.firstName = firstName;
         } else {
@@ -53,16 +54,20 @@ public class Person {
         }
         return true;
     }
-    public void setSpecific(Specific specific){
+    /**this methods evaluate the fields of specific objects of person objects*/
+    public void setSpecific(Specific specific) {
         this.specific = specific;
     }
-    public Specific getSpecific(){
+
+    public Specific getSpecific() {
         return this.specific;
     }
-    public void setGeneral(General general){
+
+    public void setGeneral(General general) {
         this.general = general;
     }
-    public General getGeneral(){
+
+    public General getGeneral() {
         return this.general;
     }
 
