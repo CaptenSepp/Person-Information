@@ -9,6 +9,7 @@ public class Main {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+//        TODO 3- at the first when program starts the first class is called named notification
 //        TODO 2- is asked if user want to add a person or add information to an existing person
         // the outputs are text files that contain information about people around
 //        TODO 1- when user say no as answer to keep adding ro not, program will come back to the loop again, this
@@ -46,7 +47,7 @@ public class Main {
                 System.out.println("which person do you want to search?\nwrite the exact First name down");
                 String thePerson = scanner.nextLine();
                 Person person = findPerson(thePerson);
-//              TODO HINWISE : because we dont collect the information when we start the program and choose the
+//              TODO HINWISE : because we don't collect the information when we start the program and choose the
 //               search option program will have error, because there is no information to be shown, we need to write in
 //               text or excel file
                 System.out.println(person.getFirstName());
