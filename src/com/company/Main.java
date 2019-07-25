@@ -89,15 +89,6 @@ public class Main {
         System.out.println("Enter the the Phone number");
         String phoneNumber = scanner.nextLine();
         Person person = new Person(firstName, lastName, meetPlace, relation, phoneNumber);
-//        Boolean key1 = true;
-//        while (key1) {
-//            addToPerson(person); // person is called(passive) by reference because it's an object of a class(Person)
-//            System.out.println("Do you want to keep adding information?\nif no press 'N'");
-//            String exitAns = scanner.nextLine();
-//            if (exitAns == "N") {
-//                key1 = false;
-//            }
-//        }
         people.add(person);
     }
 
@@ -106,7 +97,8 @@ public class Main {
      */
     private static void addToPerson(Person person) { // get person object reference here.
 //        here is asked in which part user wants to add
-        System.out.println("what do you want to add?\n1.General\n2.Specific\n3.Description\n4.press other keys to exit.");
+        System.out.println("what do you want to add?\n1.General\n2.Specific\n3.Description\n4.Notification\nif you " +
+                "want to back press another key");
         String choice1 = scanner.nextLine();
         switch (choice1) {
             case "1":// thans for you that follow with high  :))))) your wellcomeدقت
@@ -148,6 +140,11 @@ public class Main {
                 System.out.println("Enter a description for " + person.getFirstName() + " " + person.getLastName() + ".");
                 String description = scanner.nextLine();
                 person.description.add(description);// or here as before
+                break;
+            case "4":
+                System.out.println("Enter a notification for " + person.getFirstName() + " " + person.getLastName() + ".");
+                String notification = scanner.nextLine();
+                person.addNotification(notification);
                 break;
             default:
                 break;

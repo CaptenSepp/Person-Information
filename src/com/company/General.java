@@ -28,6 +28,7 @@ public class General {
         livePlaces.add(livePlace);
         return null;
     }
+
     public ArrayList<String> getLivePlaces() {
         return livePlaces;
     }
