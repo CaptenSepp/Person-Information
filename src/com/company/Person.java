@@ -12,7 +12,11 @@ public class Person {
     private General general = new General();
     private Specific specific = new Specific();
     public ArrayList<String> description = new ArrayList<>();
-    /**this constructor get the arguments from user in method main and evaluate the fields of Person class*/
+    private Notification notificationObj = new Notification();
+
+    /**
+     * this constructor get the arguments from user in method main and evaluate the fields of Person class
+     */
     public Person(String firstName, String lastName, String meetPlace, String relation, String phoneNumber) {
         /**this if checks if the Entered arguments is a valid name because a name can't contain numbers or symbols*/
         if (isName(firstName)) {
@@ -54,7 +58,10 @@ public class Person {
         }
         return true;
     }
-    /**this methods evaluate the fields of specific objects of person objects*/
+
+    /**
+     * this methods evaluate the fields of specific objects of person objects
+     */
     public void setSpecific(Specific specific) {
         this.specific = specific;
     }
@@ -63,6 +70,9 @@ public class Person {
         return this.specific;
     }
 
+    /**
+     * this methods evaluate the fields of General objects of person objects
+     */
     public void setGeneral(General general) {
         this.general = general;
     }
@@ -71,6 +81,7 @@ public class Person {
         return this.general;
     }
 
+    // here are the Getters for person primitive information
     public String getFirstName() {
         return firstName;
     }
@@ -87,15 +98,15 @@ public class Person {
         return relation;
     }
 
-    public boolean isValidName() {
-        return validName;
-    }
-
     public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    //    public boolean isValidName() {
+//        return validName;
+//    }
+//
+    public void addNotification(String notification) {
+        notificationObj.notifications.add(notification);
     }
 }
