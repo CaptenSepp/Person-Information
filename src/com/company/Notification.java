@@ -3,13 +3,13 @@ package com.company;
 // that i import people from Main, is that a efficient was or there is better options?
 import java.util.ArrayList;
 
-import static com.company.Main.people;
+//import static com.company.Main.people;
 
 public class Notification {
     private ArrayList<String> notifications = new ArrayList<>();
     Person person ;
     public static Person notification (){
-        for(Person person : people)
+        for(Person person : Main.people)
             System.out.println(person.getNotification());
         return null;
     }
