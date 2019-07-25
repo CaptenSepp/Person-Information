@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class Notification {
     public ArrayList<String> notifications = new ArrayList<>();
-    //TODO Are you sure about it? the mean is all Notification have a person.
+    public String date;
 
     public ArrayList<String> getNotifications() {
         return notifications;
